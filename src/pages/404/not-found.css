@@ -9,7 +9,7 @@
   color: white;
   font-size: calc(10px + 2vmin);
 }
-img {
+.emoji {
   width: 5%;
   height: 5%;
 }
