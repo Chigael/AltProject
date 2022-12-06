@@ -1,17 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { AuthContext } from '../../context/AuthContext.js';
 import "./Login.css";
 import { Link } from "react-router-dom";
 import Logo from "./logoPng.png";
 import welcomeimg from "./welcomeback.svg";
 
+
 function Login() {
+  const { user } = useContext[AuthContext];
   const [emailval, setemailval] = useState("");
   const [passval, setpassval] = useState("");
 
   const handlesubmit = (event) => {
     event.preventDefault();
   };
-
+console.log(user)
   return (
     <div className="main-login">
       {/* Login page
